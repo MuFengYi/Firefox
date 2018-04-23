@@ -22,9 +22,9 @@ static NSString *const kUrlStr=@"http://kj.tt/";
 //    NSLog(@"doc==%@",doc);
     for (ONOXMLElement *element in doc.rootElement.children)
     {
-        NSLog(@"element.tag==%@\nelement.attributes==%@",element.tag,element.attributes);
+//        NSLog(@"element.tag==%@\nelement.attributes==%@",element.tag,element.attributes);
     }
-    ONOXMLElement *postsParentElement= [doc firstChildWithXPath:@"//*[@class='bus_loop wow fadeIn animated']"];
+    ONOXMLElement *postsParentElement= [doc firstChildWithXPath:@"//*[@class='content_body']"];
     [postsParentElement.children enumerateObjectsUsingBlock:^(ONOXMLElement *element, NSUInteger idx, BOOL * _Nonnull stop)
     {
         NSLog(@"mobanbus==%@",element);
@@ -33,19 +33,25 @@ static NSString *const kUrlStr=@"http://kj.tt/";
 //        {
 //            [array addObject:post];
 //        }
+//
+          NSLog(@"element.tag==%@",element.tag);
+           NSLog(@"element.tag==%@",element.attributes);
+        [element.children enumerateObjectsUsingBlock:^(ONOXMLElement *element, NSUInteger idx, BOOL * _Nonnull stop) {
+                 NSLog(@"element.tag==%@",element.tag);
+                  NSLog(@"element.tag==%@",element.attributes);
+        }];
     }];
     return array;
 }
 
 +(instancetype)postWithHtmlStr:(ONOXMLElement*)element
 {
-    
     Post *p=[Post new];
-    ONOXMLElement *titleElement= [element firstChildWithXPath:@"h2/a"];
-    p.postUrl= [titleElement valueForAttribute:@"href"];
-    p.title= [titleElement stringValue];
-    ONOXMLElement *dateElement= [element firstChildWithXPath:@"div[2]/span[1]"];
-    p.postDate= [dateElement stringValue];
+//    ONOXMLElement *titleElement= [element firstChildWithXPath:@"h2/a"];
+//    p.postUrl= [titleElement valueForAttribute:@"href"];
+//    p.title= [titleElement stringValue];
+//    ONOXMLElement *dateElement= [element firstChildWithXPath:@"div[2]/span[1]"];
+//    p.postDate= [dateElement stringValue];
     return p;
 }
 
