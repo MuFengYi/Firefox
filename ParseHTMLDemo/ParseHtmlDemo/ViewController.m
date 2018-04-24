@@ -7,16 +7,20 @@
 //
 
 #import "ViewController.h"
-#import <Ono.h>
 #import "Post.h"
-@interface ViewController ()
+#import "PostTableViewCell.h"
+#import "WebPlayViewController.h"
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property   (nonatomic,strong)NSArray *postArray;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [Post getNewPosts];
+    _postArray  =   [Post getNewPosts];
+    [self.tableView reloadData];
 //    NSError *error = nil;
 //    NSString *XMLFilePath = [[@(__FILE__) stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"nutrition.xml"];
 //    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"nutrition" ofType:@"xml"]];
@@ -72,4 +76,27 @@
 
 }
 
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    PostTableViewCell   *cell   =   [tableView dequeueReusableCellWithIdentifier:@"postcell" forIndexPath:indexPath];
+    cell.post  =    [_postArray objectAtIndex:indexPath.row];
+    return cell;
+}
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _postArray.count;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 108.f;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Post    *post   =   [_postArray objectAtIndex:indexPath.row];
+    UIStoryboard    *storyboard =   [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController    *navigationController =   [storyboard instantiateViewControllerWithIdentifier:@"webviewStoryboard"];
+    WebPlayViewController   *webPlayView    =   [navigationController.viewControllers firstObject];
+    webPlayView.videoUrl    =   post.href;
+    [self presentViewController:navigationController animated:YES completion:nil];
+}
 @end

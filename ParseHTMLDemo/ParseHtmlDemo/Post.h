@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-@class ONOXMLElement;
-
+#import "Ono.h"
+#import <YYModel/YYModel.h>
 @interface Post : NSObject
 @property (copy,nonatomic) NSString *title;
-@property (copy,nonatomic) NSString *postDate;
-@property (copy,nonatomic) NSString *postUrl;
-
+@property (copy,nonatomic) NSString *href;
+@property (copy,nonatomic) NSString *alt;
+@property (copy,nonatomic) NSString *src;
 +(NSArray*)getNewPosts;
-+(instancetype)postWithHtmlStr:(ONOXMLElement*)element;
 @end

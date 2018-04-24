@@ -540,8 +540,7 @@ static void ONOSetErrorFromXMLErrorPtr(NSError * __autoreleasing *error, xmlErro
 
 #pragma mark -
 
-- (NSDictionary *)
-attributes {
+- (NSDictionary *)attributes {
     if (!_attributes) {
         NSMutableDictionary *mutableAttributes = [NSMutableDictionary dictionary];
         for (xmlAttrPtr attribute = self.xmlNode->properties; attribute != NULL; attribute = attribute->next) {

@@ -15,9 +15,12 @@
 		0EEA4D101CBC0FC000E3B797 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEA4D0E1CBC0FC000E3B797 /* LaunchScreen.storyboard */; };
 		0EEA4D1B1CBC0FC000E3B797 /* ParseHtmlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA4D1A1CBC0FC000E3B797 /* ParseHtmlDemoTests.m */; };
 		0EEA4D271CBC19B300E3B797 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA4D261CBC19B300E3B797 /* Post.m */; };
+		5BD877A92198B01A58360D16 /* Pods_ParseHtmlDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A239D7E3E4027A42256F45E5 /* Pods_ParseHtmlDemoTests.framework */; };
 		B4A098B8208DB57100820125 /* nutrition.xml in Resources */ = {isa = PBXBuildFile; fileRef = B4A098B7208DB57100820125 /* nutrition.xml */; };
-		B4A098BA208DE8B000820125 /* Firefox_3.6.28.dmg in Resources */ = {isa = PBXBuildFile; fileRef = B4A098B9208DE8B000820125 /* Firefox_3.6.28.dmg */; };
-		F5A937FAEB4C6CF34CE66B6D /* libPods-ParseHtmlDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8186B20B3F93C45C856D9A73 /* libPods-ParseHtmlDemo.a */; };
+		B4A098BD208F08C400820125 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A098BC208F08C400820125 /* PostTableViewCell.m */; };
+		B4A098C0208F0ECF00820125 /* WebPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A098BE208F0ECE00820125 /* WebPlayViewController.m */; };
+		B4A098C2208F179F00820125 /* Firefox 56.0.dmg in Resources */ = {isa = PBXBuildFile; fileRef = B4A098C1208F179E00820125 /* Firefox 56.0.dmg */; };
+		DD8BCE981AB904B65F5FD381 /* Pods_ParseHtmlDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60411E8A19DF4D88E4B0E73E /* Pods_ParseHtmlDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02BB7513C24B864611654A72 /* Pods-ParseHtmlDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHtmlDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		0EEA4CFD1CBC0FC000E3B797 /* ParseHtmlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseHtmlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEA4D011CBC0FC000E3B797 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0EEA4D031CBC0FC000E3B797 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,10 +49,18 @@
 		0EEA4D1C1CBC0FC000E3B797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EEA4D251CBC19B300E3B797 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		0EEA4D261CBC19B300E3B797 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
-		43A52D44DBD2F93BEA39E371 /* Pods-ParseHtmlDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHtmlDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo.release.xcconfig"; sourceTree = "<group>"; };
-		8186B20B3F93C45C856D9A73 /* libPods-ParseHtmlDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseHtmlDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E71ACCD6136EADAE074129 /* Pods-ParseHtmlDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHtmlDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHtmlDemoTests/Pods-ParseHtmlDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30E929B76E02BD6F3A9F5DB9 /* Pods-ParseHtmlDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHtmlDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHtmlDemoTests/Pods-ParseHtmlDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		421F34F74F21E74516F7508B /* Pods-ParseHtmlDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHtmlDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo.release.xcconfig"; sourceTree = "<group>"; };
+		60411E8A19DF4D88E4B0E73E /* Pods_ParseHtmlDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseHtmlDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		875CD5F670329015E984ADD6 /* Pods-ParseHtmlDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHtmlDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A239D7E3E4027A42256F45E5 /* Pods_ParseHtmlDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseHtmlDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A098B7208DB57100820125 /* nutrition.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = nutrition.xml; sourceTree = "<group>"; };
-		B4A098B9208DE8B000820125 /* Firefox_3.6.28.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Firefox_3.6.28.dmg; sourceTree = "<group>"; };
+		B4A098BB208F08C400820125 /* PostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		B4A098BC208F08C400820125 /* PostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
+		B4A098BE208F0ECE00820125 /* WebPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPlayViewController.m; sourceTree = "<group>"; };
+		B4A098BF208F0ECF00820125 /* WebPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPlayViewController.h; sourceTree = "<group>"; };
+		B4A098C1208F179E00820125 /* Firefox 56.0.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Firefox 56.0.dmg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A937FAEB4C6CF34CE66B6D /* libPods-ParseHtmlDemo.a in Frameworks */,
+				DD8BCE981AB904B65F5FD381 /* Pods_ParseHtmlDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD877A92198B01A58360D16 /* Pods_ParseHtmlDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +89,8 @@
 				0EEA4CFF1CBC0FC000E3B797 /* ParseHtmlDemo */,
 				0EEA4D191CBC0FC000E3B797 /* ParseHtmlDemoTests */,
 				0EEA4CFE1CBC0FC000E3B797 /* Products */,
-				F07FB37E21475B2E2532AC8B /* Pods */,
-				FDD5764AB1748F772CFCE40F /* Frameworks */,
+				2814495509221474CF3ED980 /* Pods */,
+				F7664754906831B12AD3EF50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +110,15 @@
 				0EEA4D041CBC0FC000E3B797 /* AppDelegate.m */,
 				0EEA4D061CBC0FC000E3B797 /* ViewController.h */,
 				0EEA4D071CBC0FC000E3B797 /* ViewController.m */,
+				B4A098BB208F08C400820125 /* PostTableViewCell.h */,
+				B4A098BC208F08C400820125 /* PostTableViewCell.m */,
 				0EEA4D251CBC19B300E3B797 /* Post.h */,
 				0EEA4D261CBC19B300E3B797 /* Post.m */,
+				B4A098BF208F0ECF00820125 /* WebPlayViewController.h */,
+				B4A098BE208F0ECE00820125 /* WebPlayViewController.m */,
 				0EEA4D091CBC0FC000E3B797 /* Main.storyboard */,
 				0EEA4D0C1CBC0FC000E3B797 /* Assets.xcassets */,
-				B4A098B9208DE8B000820125 /* Firefox_3.6.28.dmg */,
+				B4A098C1208F179E00820125 /* Firefox 56.0.dmg */,
 				B4A098B7208DB57100820125 /* nutrition.xml */,
 				0EEA4D0E1CBC0FC000E3B797 /* LaunchScreen.storyboard */,
 				0EEA4D111CBC0FC000E3B797 /* Info.plist */,
@@ -129,19 +144,22 @@
 			path = ParseHtmlDemoTests;
 			sourceTree = "<group>";
 		};
-		F07FB37E21475B2E2532AC8B /* Pods */ = {
+		2814495509221474CF3ED980 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				02BB7513C24B864611654A72 /* Pods-ParseHtmlDemo.debug.xcconfig */,
-				43A52D44DBD2F93BEA39E371 /* Pods-ParseHtmlDemo.release.xcconfig */,
+				875CD5F670329015E984ADD6 /* Pods-ParseHtmlDemo.debug.xcconfig */,
+				421F34F74F21E74516F7508B /* Pods-ParseHtmlDemo.release.xcconfig */,
+				20E71ACCD6136EADAE074129 /* Pods-ParseHtmlDemoTests.debug.xcconfig */,
+				30E929B76E02BD6F3A9F5DB9 /* Pods-ParseHtmlDemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FDD5764AB1748F772CFCE40F /* Frameworks */ = {
+		F7664754906831B12AD3EF50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8186B20B3F93C45C856D9A73 /* libPods-ParseHtmlDemo.a */,
+				60411E8A19DF4D88E4B0E73E /* Pods_ParseHtmlDemo.framework */,
+				A239D7E3E4027A42256F45E5 /* Pods_ParseHtmlDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,12 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EEA4D1F1CBC0FC000E3B797 /* Build configuration list for PBXNativeTarget "ParseHtmlDemo" */;
 			buildPhases = (
-				F8254D9CCFC5A91EBAD733A2 /* Check Pods Manifest.lock */,
+				E94466C5AA2389F705B245D1 /* [CP] Check Pods Manifest.lock */,
 				0EEA4CF91CBC0FC000E3B797 /* Sources */,
 				0EEA4CFA1CBC0FC000E3B797 /* Frameworks */,
 				0EEA4CFB1CBC0FC000E3B797 /* Resources */,
-				BD7FC0C1654D7F026013B426 /* Embed Pods Frameworks */,
-				7B8F01C8D9B4DF81DAECAAEA /* Copy Pods Resources */,
+				93C18C9E614EB927F0F2D3B9 /* [CP] Embed Pods Frameworks */,
+				FE59B31DFEAD7DCF4059073A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EEA4D221CBC0FC000E3B797 /* Build configuration list for PBXNativeTarget "ParseHtmlDemoTests" */;
 			buildPhases = (
+				B726244B5DA03AFB359EDD38 /* [CP] Check Pods Manifest.lock */,
 				0EEA4D121CBC0FC000E3B797 /* Sources */,
 				0EEA4D131CBC0FC000E3B797 /* Frameworks */,
 				0EEA4D141CBC0FC000E3B797 /* Resources */,
+				C5B56D9CC86360AD6AB67155 /* [CP] Embed Pods Frameworks */,
+				E0AC068DEF6D385881951F53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,7 +219,7 @@
 				TargetAttributes = {
 					0EEA4CFC1CBC0FC000E3B797 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 9XW236Z8LL;
+						DevelopmentTeam = Y5EFP237MC;
 					};
 					0EEA4D151CBC0FC000E3B797 = {
 						CreatedOnToolsVersion = 7.3;
@@ -231,11 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A098C2208F179F00820125 /* Firefox 56.0.dmg in Resources */,
 				B4A098B8208DB57100820125 /* nutrition.xml in Resources */,
 				0EEA4D101CBC0FC000E3B797 /* LaunchScreen.storyboard in Resources */,
 				0EEA4D0D1CBC0FC000E3B797 /* Assets.xcassets in Resources */,
 				0EEA4D0B1CBC0FC000E3B797 /* Main.storyboard in Resources */,
-				B4A098BA208DE8B000820125 /* Firefox_3.6.28.dmg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,49 +270,107 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B8F01C8D9B4DF81DAECAAEA /* Copy Pods Resources */ = {
+		93C18C9E614EB927F0F2D3B9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Ono/Ono.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BD7FC0C1654D7F026013B426 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ono.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F8254D9CCFC5A91EBAD733A2 /* Check Pods Manifest.lock */ = {
+		B726244B5DA03AFB359EDD38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParseHtmlDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B56D9CC86360AD6AB67155 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseHtmlDemoTests/Pods-ParseHtmlDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0AC068DEF6D385881951F53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseHtmlDemoTests/Pods-ParseHtmlDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E94466C5AA2389F705B245D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParseHtmlDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE59B31DFEAD7DCF4059073A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -302,9 +381,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EEA4D081CBC0FC000E3B797 /* ViewController.m in Sources */,
+				B4A098C0208F0ECF00820125 /* WebPlayViewController.m in Sources */,
 				0EEA4D051CBC0FC000E3B797 /* AppDelegate.m in Sources */,
 				0EEA4D021CBC0FC000E3B797 /* main.m in Sources */,
 				0EEA4D271CBC19B300E3B797 /* Post.m in Sources */,
+				B4A098BD208F08C400820125 /* PostTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,10 +533,10 @@
 		};
 		0EEA4D201CBC0FC000E3B797 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02BB7513C24B864611654A72 /* Pods-ParseHtmlDemo.debug.xcconfig */;
+			baseConfigurationReference = 875CD5F670329015E984ADD6 /* Pods-ParseHtmlDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9XW236Z8LL;
+				DEVELOPMENT_TEAM = Y5EFP237MC;
 				INFOPLIST_FILE = ParseHtmlDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -466,10 +547,10 @@
 		};
 		0EEA4D211CBC0FC000E3B797 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43A52D44DBD2F93BEA39E371 /* Pods-ParseHtmlDemo.release.xcconfig */;
+			baseConfigurationReference = 421F34F74F21E74516F7508B /* Pods-ParseHtmlDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9XW236Z8LL;
+				DEVELOPMENT_TEAM = Y5EFP237MC;
 				INFOPLIST_FILE = ParseHtmlDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -480,6 +561,7 @@
 		};
 		0EEA4D231CBC0FC000E3B797 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E71ACCD6136EADAE074129 /* Pods-ParseHtmlDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ParseHtmlDemoTests/Info.plist;
@@ -492,6 +574,7 @@
 		};
 		0EEA4D241CBC0FC000E3B797 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E929B76E02BD6F3A9F5DB9 /* Pods-ParseHtmlDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ParseHtmlDemoTests/Info.plist;
