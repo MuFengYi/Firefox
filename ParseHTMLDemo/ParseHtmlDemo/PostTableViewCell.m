@@ -23,7 +23,11 @@
 - (NSString*)getimageString:(NSString*)imageString
 {
     NSArray *array  =   [imageString componentsSeparatedByString:@"&"];
-    return [[[array objectAtIndex:0] componentsSeparatedByString:@"="] objectAtIndex:1];
+    if ([[array objectAtIndex:0] containsString:@"www.guxiaobei.com/"])
+    {
+         return  [array objectAtIndex:0];
+    }
+   return  [[[array objectAtIndex:0] componentsSeparatedByString:@"="] objectAtIndex:1];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

@@ -8,21 +8,20 @@
 
 #import "Post.h"
 
-
-static NSString *const kUrlStr=@"http://www.wearesellers.com/article/";
+//static NSString *const kUrlStr=@"http://kj.tt";
 
 @implementation Post
-+(NSArray*)getNewPosts
++(NSArray*)getNewPosts:(WebParseObject*)webparseObject
 {
     NSMutableArray *array=[NSMutableArray array];
     NSMutableDictionary     *mutableDictionary  =   [NSMutableDictionary dictionary];
-    NSData *data= [NSData dataWithContentsOfURL:[NSURL URLWithString:kUrlStr]];
+    NSData *data= [NSData dataWithContentsOfURL:[NSURL URLWithString:webparseObject.kUrlStr]];
     NSError *error;
     ONOXMLDocument *doc=[ONOXMLDocument HTMLDocumentWithData:data error:&error];
-    ONOXMLElement *postsParentElement= [doc firstChildWithXPath:@"//*[@class='bus_viewthread_c']"];
+    ONOXMLElement *postsParentElement= [doc firstChildWithXPath:webparseObject.firstXPath];
     [postsParentElement.children enumerateObjectsUsingBlock:^(ONOXMLElement *element, NSUInteger idx, BOOL * _Nonnull stop)
      {
-             [element enumerateElementsWithXPath:@"//*[@class='content_body']" usingBlock:^(ONOXMLElement *element, NSUInteger idx, BOOL *stop) {
+             [element enumerateElementsWithXPath:webparseObject.secondXPath usingBlock:^(ONOXMLElement *element, NSUInteger idx, BOOL *stop) {
                  NSLog(@"YY==%@",element.attributes);
                  [element.children enumerateObjectsUsingBlock:^(ONOXMLElement *element, NSUInteger idx, BOOL * _Nonnull stop)
                   {

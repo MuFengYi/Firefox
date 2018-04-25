@@ -10,6 +10,7 @@
 #import "Post.h"
 #import "PostTableViewCell.h"
 #import "WebPlayViewController.h"
+#import "WebParseObject.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property   (nonatomic,strong)NSArray *postArray;
@@ -19,7 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _postArray  =   [Post getNewPosts];
+//    @"http://kj.tt" @"//*[@class='bus_viewthread_c']" @"//*[@class='content_body']"
+//  @"http://www.guxiaobei.com" @"//*[@class='content']"    @"//*[@class='excerpt']"
+//    http://quoteapi.webull.com/api/securities/market/tabs/mi/foreignExchangesRates
+    WebParseObject  *webparseObject =   [[WebParseObject alloc]init];
+    webparseObject.kUrlStr  =   @"http://www.guxiaobei.com/";
+//    @"http://kj.tt" ;
+    webparseObject.firstXPath   =     @"//*[@class='content']";
+//    @"//*[@class='bus_viewthread_c']";
+    webparseObject.secondXPath  =     @"//*[@class='focus']";
+//    @"//*[@class='content_body']";
+    _postArray  =   [Post getNewPosts:webparseObject];
     [self.tableView reloadData];
 //    NSError *error = nil;
 //    NSString *XMLFilePath = [[@(__FILE__) stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"nutrition.xml"];

@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Ono.h"
 #import <YYModel/YYModel.h>
+#import "Ono.h"
+#import "WebParseObject.h"
 @interface Post : NSObject
 @property (copy,nonatomic) NSString *title;
 @property (copy,nonatomic) NSString *href;
 @property (copy,nonatomic) NSString *alt;
 @property (copy,nonatomic) NSString *src;
-+(NSArray*)getNewPosts;
++(NSArray*)getNewPosts:(WebParseObject*)webparseObject;
 @end
