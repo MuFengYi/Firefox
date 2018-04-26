@@ -22,6 +22,7 @@
 		B4A098C2208F179F00820125 /* Firefox 56.0.dmg in Resources */ = {isa = PBXBuildFile; fileRef = B4A098C1208F179E00820125 /* Firefox 56.0.dmg */; };
 		B4A098D120902A8100820125 /* WebPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A098D020902A8100820125 /* WebPlayViewController.m */; };
 		B4A098D420902EBE00820125 /* WebParseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A098D320902EBE00820125 /* WebParseObject.m */; };
+		B4A098DE209184F800820125 /* WkPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A098DD209184F800820125 /* WkPlayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		B4A098D020902A8100820125 /* WebPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPlayViewController.m; sourceTree = "<group>"; };
 		B4A098D220902EBE00820125 /* WebParseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebParseObject.h; sourceTree = "<group>"; };
 		B4A098D320902EBE00820125 /* WebParseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebParseObject.m; sourceTree = "<group>"; };
+		B4A098DC209184F800820125 /* WkPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WkPlayViewController.h; sourceTree = "<group>"; };
+		B4A098DD209184F800820125 /* WkPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WkPlayViewController.m; sourceTree = "<group>"; };
 		B75CB10623DB0744C1EEE772 /* Pods-ParseHtmlDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHtmlDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHtmlDemoTests/Pods-ParseHtmlDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D62E08BF80BAEF036DDD69C3 /* Pods-ParseHtmlDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHtmlDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHtmlDemoTests/Pods-ParseHtmlDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D95CADBD00DAB84B3EBF2F63 /* Pods-ParseHtmlDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHtmlDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				B4A098D320902EBE00820125 /* WebParseObject.m */,
 				B4A098CF20902A8100820125 /* WebPlayViewController.h */,
 				B4A098D020902A8100820125 /* WebPlayViewController.m */,
+				B4A098DC209184F800820125 /* WkPlayViewController.h */,
+				B4A098DD209184F800820125 /* WkPlayViewController.m */,
 				0EEA4D091CBC0FC000E3B797 /* Main.storyboard */,
 				0EEA4D0C1CBC0FC000E3B797 /* Assets.xcassets */,
 				B4A098C1208F179E00820125 /* Firefox 56.0.dmg */,
@@ -317,12 +322,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Ono/Ono.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TFHpple/TFHpple.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ono.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TFHpple.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A098DE209184F800820125 /* WkPlayViewController.m in Sources */,
 				0EEA4D081CBC0FC000E3B797 /* ViewController.m in Sources */,
 				B4A098D120902A8100820125 /* WebPlayViewController.m in Sources */,
 				0EEA4D051CBC0FC000E3B797 /* AppDelegate.m in Sources */,

@@ -4,6 +4,8 @@ use_frameworks!
 
 target 'ParseHtmlDemo' do
 pod 'Ono'
+pod 'TFHpple'
+
 pod 'YYModel'
 pod 'SDWebImage'
 end

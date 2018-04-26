@@ -15,20 +15,23 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property   (nonatomic,strong)NSArray *postArray;
 @end
-
+#define KJTT    @"http://kj.tt"
+#define GUXIAOBEI   @"http://www.guxiaobei.com/"
+#define CIFNEWS @"http://www.cifnews.com/"
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    @"http://kj.tt" @"//*[@class='bus_viewthread_c']" @"//*[@class='content_body']"
-//  @"http://www.guxiaobei.com" @"//*[@class='content']"    @"//*[@class='excerpt']"
+//  @"http://www.guxiaobei.com/" @"//*[@class='content']"    @"//*[@class='focus']"
 //    http://quoteapi.webull.com/api/securities/market/tabs/mi/foreignExchangesRates
+//    http://www.cifnews.com/
     WebParseObject  *webparseObject =   [[WebParseObject alloc]init];
-    webparseObject.kUrlStr  =   @"http://www.guxiaobei.com/";
+    webparseObject.kUrlStr  =   CIFNEWS;
 //    @"http://kj.tt" ;
-    webparseObject.firstXPath   =     @"//*[@class='content']";
+    webparseObject.firstXPath   =     @"//*[@class='main']";
 //    @"//*[@class='bus_viewthread_c']";
-    webparseObject.secondXPath  =     @"//*[@class='focus']";
+    webparseObject.secondXPath  =     @"//*[@class='dimg']";
 //    @"//*[@class='content_body']";
     _postArray  =   [Post getNewPosts:webparseObject];
     [self.tableView reloadData];
@@ -107,7 +110,10 @@
     UIStoryboard    *storyboard =   [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UINavigationController    *navigationController =   [storyboard instantiateViewControllerWithIdentifier:@"webviewStoryboard"];
     WebPlayViewController   *webPlayView    =   [navigationController.viewControllers firstObject];
-    webPlayView.videoUrl    =   post.href;
+     webPlayView.videoUrl    =   post.href;
+    if ([post.src containsString:@"http://pic.cifnews.com"]) {
+         webPlayView.videoUrl    =   [CIFNEWS stringByAppendingString:post.href];
+    }
     [self presentViewController:navigationController animated:YES completion:nil];
 }
 @end

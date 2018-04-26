@@ -16,4 +16,5 @@
 @property (copy,nonatomic) NSString *alt;
 @property (copy,nonatomic) NSString *src;
 +(NSArray*)getNewPosts:(WebParseObject*)webparseObject;
++ (NSArray*)getVideourl:(WebParseObject*)webparseObject;
 @end
