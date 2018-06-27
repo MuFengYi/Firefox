@@ -186,7 +186,6 @@
 				0EEA4CFA1CBC0FC000E3B797 /* Frameworks */,
 				0EEA4CFB1CBC0FC000E3B797 /* Resources */,
 				9300A69200A0494DC51949FD /* [CP] Embed Pods Frameworks */,
-				108A581286E19D80B74937FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,8 +204,6 @@
 				0EEA4D121CBC0FC000E3B797 /* Sources */,
 				0EEA4D131CBC0FC000E3B797 /* Frameworks */,
 				0EEA4D141CBC0FC000E3B797 /* Resources */,
-				CB512C11E4FF1D7DA47DC932 /* [CP] Embed Pods Frameworks */,
-				E7811CD9BD18B2813FD0457F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,7 +226,7 @@
 				TargetAttributes = {
 					0EEA4CFC1CBC0FC000E3B797 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = Y5EFP237MC;
+						DevelopmentTeam = 9XW236Z8LL;
 					};
 					0EEA4D151CBC0FC000E3B797 = {
 						CreatedOnToolsVersion = 7.3;
@@ -280,21 +277,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		108A581286E19D80B74937FF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseHtmlDemo/Pods-ParseHtmlDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3A341761913929AAFEFCE1D4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,36 +335,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB512C11E4FF1D7DA47DC932 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseHtmlDemoTests/Pods-ParseHtmlDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7811CD9BD18B2813FD0457F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseHtmlDemoTests/Pods-ParseHtmlDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -550,7 +502,7 @@
 			baseConfigurationReference = 9297E0D028904310FA9DC0BC /* Pods-ParseHtmlDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y5EFP237MC;
+				DEVELOPMENT_TEAM = 9XW236Z8LL;
 				INFOPLIST_FILE = ParseHtmlDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -564,7 +516,7 @@
 			baseConfigurationReference = D95CADBD00DAB84B3EBF2F63 /* Pods-ParseHtmlDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y5EFP237MC;
+				DEVELOPMENT_TEAM = 9XW236Z8LL;
 				INFOPLIST_FILE = ParseHtmlDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -13,6 +13,19 @@
 @implementation Post
 +(NSArray*)getNewPosts:(WebParseObject*)webparseObject
 {
+//    NSMutableDictionary *dict   =   [NSMutableDictionary    dictionary];
+//    [dict setObject:@"auth" forKey:@"mufeng"];
+//    [dict setObject:@"password" forKey:@"yi123456"];
+//    [dict setObject:@"csrfKey" forKey:@"3ee59124471633c0b64337a4322c354a"];
+//    [dict setObject:@"remember_me" forKey:@"1"];
+//    [dict setObject:@"_processLogin" forKey:@"usernamepassword"];
+//    [dict setObject:@"_processLogin" forKey:@"usernamepassword"];
+//    [[HttpRequest sharedInstance] POST:@"https://iosgods.cn/index.php?/login/" dict:dict succeed:^(id data) {
+//        NSString    *string =   [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//        NSLog(@"string=%@",string);
+//    } failure:^(NSError *error) {
+//
+//    }];
     NSMutableArray *array=[NSMutableArray array];
     NSMutableDictionary     *mutableDictionary  =   [NSMutableDictionary dictionary];
     NSData *data= [NSData dataWithContentsOfURL:[NSURL URLWithString:webparseObject.kUrlStr]];

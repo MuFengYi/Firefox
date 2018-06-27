@@ -1,0 +1,6 @@
+framework module Pods_ParseHtmlDemoTests {
+  umbrella header "Pods-ParseHtmlDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
